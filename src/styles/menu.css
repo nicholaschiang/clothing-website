@@ -4,11 +4,13 @@
 html,
 body {
     height: 100%;
-    src: url(../fonts/Poppins-Black.ttf),
-    url(../fonts/Poppins-ExtraBold.ttf),
-    url(../fonts/Poppins-Medium.ttf),
-    url(../fonts/Poppins-Regular.ttf);
-    font-family: 'Poppins', sans-serif;
+    /*
+     *src: url(../fonts/Poppins-Black.ttf),
+     *url(../fonts/Poppins-ExtraBold.ttf),
+     *url(../fonts/Poppins-Medium.ttf),
+     *url(../fonts/Poppins-Regular.ttf);
+     *font-family: 'Poppins', sans-serif;
+     */
     line-height: 1.8;
     color: #999
 }
@@ -369,4 +371,3 @@ a {
 .box-primary-nav li {
     font-size: 18px;
 }
-

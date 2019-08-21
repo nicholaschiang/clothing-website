@@ -634,11 +634,13 @@
 html,
 body {
     height: 100%;
-    src: url(./assets/fonts/42cf9f0820d16f3ac2c26a7710ce70f2.ttf),
-    url(./assets/fonts/6b78c7ec468eb0e13c6c5c4c39203986.ttf),
-    url(./assets/fonts/ba95810b56f476990ca71d15139d5111.ttf),
-    url(./assets/fonts/41e8dead03fb979ecc23b8dfb0fef627.ttf);
-    font-family: 'Poppins', sans-serif;
+    /*
+     *src: url(../fonts/Poppins-Black.ttf),
+     *url(../fonts/Poppins-ExtraBold.ttf),
+     *url(../fonts/Poppins-Medium.ttf),
+     *url(../fonts/Poppins-Regular.ttf);
+     *font-family: 'Poppins', sans-serif;
+     */
     line-height: 1.8;
     color: #999
 }
@@ -999,7 +1001,73 @@ a {
 .box-primary-nav li {
     font-size: 18px;
 }
+/* footer
+==================================================*/
 
+footer {
+    padding: 30px 0;
+    text-align: center;
+    background: #f5f5f5
+}
+
+.copyright {
+    color: #ccc;
+    margin-bottom: 0;
+}
+
+footer img {
+    margin: 0 auto;
+}
+/* backto top
+==================================================*/
+
+.cd-top svg {
+    width: 25px;
+    height: 25px;
+    margin-top: 6px;
+}
+
+.cd-top {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 20px;
+    line-height: 40px;
+    font-size: 20px;
+    right: 10px;
+    text-align: center;
+    color: #fff;
+    background: rgba(51, 114, 223, 0.8);
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
+}
+
+.cd-top.cd-is-visible,
+.cd-top.cd-fade-out,
+.no-touch .cd-top:hover {
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s;
+}
+
+.cd-top.cd-is-visible {
+    /* the button becomes visible */
+    visibility: visible;
+    opacity: 1;
+}
+
+.cd-top.cd-fade-out {
+    opacity: .5;
+}
+
+.no-touch .cd-top:hover,
+.no-touch .cd-top:focus {
+    background-color: #0395DE; /* Original: #ffbf00 */;
+    opacity: 1;
+    color: #fff;
+}
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.

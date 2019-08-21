@@ -19,7 +19,8 @@
   "homepage": "https://github.com/nicholaschiang/clothing-site#readme",
   "dependencies": {
     "@material/image-list": "^3.1.0",
-    "@material/layout-grid": "^3.1.0"
+    "@material/layout-grid": "^3.1.0",
+    "jquery": "^3.4.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.5.1",
