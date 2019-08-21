@@ -1,0 +1,21 @@
+@import "@material/layout-grid/mdc-layout-grid";
+@import "@material/image-list/mdc-image-list";
+
+.mdc-image-list {
+  @include mdc-image-list-masonry-columns(4, 20px);
+  margin: 16px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .mdc-image-list {
+    @include mdc-image-list-masonry-columns(2, 20px);
+    margin: 16px;
+  }
+}
+
+.mdc-layout-grid {
+  @include mdc-layout-grid-fixed-column-width('desktop', 10px, 10px, 300px);
+  .mdc-layout-grid__cell {
+    @include mdc-layout-grid-cell('desktop', 3, 10px);
+  }
+}
