@@ -41,6 +41,7 @@ module.exports = [{
                 path.resolve(__dirname, 'styles/footer.css'),
                 path.resolve(__dirname, 'styles/backtotop.css'),
                 path.resolve(__dirname, 'styles/bootstrap.min.css'),
+                path.resolve(__dirname, 'styles/plyr.css'),
             ]
         },
         output: {
@@ -102,6 +103,7 @@ module.exports = [{
             'bundle.min.js': [
                 path.resolve(__dirname, 'scripts/custom.js'),
                 path.resolve(__dirname, 'scripts/menu.js'),
+                path.resolve(__dirname, 'scripts/plyr.js'),
             ]
         },
         output: {
